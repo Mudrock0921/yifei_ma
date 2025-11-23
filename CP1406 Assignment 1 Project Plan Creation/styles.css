@@ -1,0 +1,344 @@
+body, header, nav, main, footer, h1, h2, h3, h4, h5, h6, div, img, ul, ol, li, p, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 2%;
+    text-align: center;
+}
+
+header img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.25em;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav li a:hover {
+    background-color: #1abc9c;
+    border-radius: 4px;
+}
+
+#hero {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    clear: left;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: 'Georgia', serif;
+}
+
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+.tel-link {
+    background-color: #3498db;
+    padding: 2%;
+    margin: 2% auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25em;
+    display: block;
+    font-weight: bold;
+}
+
+.hours {
+    margin-left: 10%;
+    list-style-type: none;
+}
+
+.hours li {
+    margin-bottom: 0.5em;
+}
+
+.action {
+    font-size: 1.25em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.round {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#preventive, #restorative, #cosmetic, #specialized {
+    margin: 2% 0;
+    padding: 2%;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+#preventive h2, #restorative h2, #cosmetic h2, #specialized h2 {
+    color: #2c3e50;
+    margin-bottom: 1%;
+}
+
+.team-member {
+    margin: 3% 0;
+    padding: 2%;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.team-member h3 {
+    color: #2c3e50;
+    margin-bottom: 1%;
+}
+
+.team-member img {
+    max-width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+#annual-checkup {
+    background-color: #ecf0f1;
+    padding: 3%;
+    border-radius: 8px;
+    margin: 3% 0;
+}
+
+#annual-checkup h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#annual-checkup dl {
+    margin-left: 5%;
+}
+
+#annual-checkup dt {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 1%;
+}
+
+#annual-checkup dd {
+    margin-bottom: 1%;
+    padding-left: 2%;
+}
+
+#contact {
+    text-align: center;
+    padding: 3%;
+}
+
+#contact h2, #contact h3 {
+    color: #2c3e50;
+    margin-bottom: 1%;
+}
+
+#contact a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2c3e50;
+    padding: 2%;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    font-size: 0.9em;
+    text-align: center;
+    color: #fff;
+    padding: 0.5em 1em;
+}
+
+footer p a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 630px) {
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    nav li {
+        font-size: 1.5em;
+    }
+
+    #preventive, #restorative, #cosmetic, #specialized {
+        width: 45%;
+        float: left;
+        margin: 2%;
+    }
+
+    .team-member {
+        width: 45%;
+        float: left;
+        margin: 2%;
+    }
+}
+
+@media screen and (min-width: 1015px) {
+    #container {
+        width: 80%;
+    }
+
+    header {
+        padding: 1%;
+    }
+
+    nav {
+        padding: 0.5%;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    #preventive, #restorative, #cosmetic, #specialized {
+        width: 21%;
+        margin: 2%;
+    }
+
+    .team-member {
+        width: 45%;
+    }
+
+    #hero img {
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+
+form {
+    margin: 2% 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 1%;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1% 3%;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    nav, footer, .tel-link, .action {
+        display: none;
+    }
+
+    main {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+
+    a::after {
+        content: " (" attr(href) ")";
+    }
+}
